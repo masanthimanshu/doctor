@@ -1,0 +1,14 @@
+.top_sec {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/home_bg.png");
+}
+
+.sec_two {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: var(--theme-blue);
+}

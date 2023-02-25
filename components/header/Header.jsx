@@ -1,3 +1,49 @@
+import { Box, AppBar, Toolbar, Button, Typography } from "@mui/material";
+
 export const Header = () => {
-  return <div>Header</div>;
+  return (
+    <AppBar position="sticky" elevation={0}>
+      <Toolbar>
+        <img src="/logo.png" alt="Logo" style={{ height: "4rem" }} />
+        <Box sx={{ width: "100%" }}>&nbsp;</Box>
+        <Box display="flex">
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Home</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>About</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Services</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Blog</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Dentists</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Portfolio</b>
+            </Typography>
+          </Button>
+          <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">
+            <Typography>
+              <b>Contact</b>
+            </Typography>
+          </Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
+  );
 };

@@ -1,0 +1,16 @@
+.sec_one {
+  color: white;
+  background-image: url("/footer_bg_1.png");
+}
+
+.sec_two {
+  color: #2c69ab;
+  background-image: url("/footer_bg_2.png");
+}
+
+.sec_one,
+.sec_two {
+  padding: 2rem 0;
+  text-align: center;
+  background-size: cover;
+}

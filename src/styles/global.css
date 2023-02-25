@@ -1,4 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato);
+
+:root {
+  --theme-blue: #13c7df;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lato";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
