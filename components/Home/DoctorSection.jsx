@@ -13,7 +13,7 @@ export const DoctorSection = ({
     <Container>
       <Grid container spacing={5}>
         <Grid item md={6} order={orderImg}>
-          <img src={img} alt="Doctor" style={{ width: "100%" }} />
+          <img src={img} alt="Doctor" />
         </Grid>
         <Grid item md={6} order={orderData} display="flex" alignItems="center">
           <Box>

@@ -1,6 +1,7 @@
 import style from "./style.module.css";
-import { DoctorSection } from "../../../components";
-import { Container, Typography, Grid, Button } from "@mui/material";
+import DoctorData from "../../../data/DoctorData.json";
+import { DoctorSection, ImgComponent } from "../../../components";
+import { Container, Typography, Grid, Button, Divider } from "@mui/material";
 
 function Home() {
   return (
@@ -74,47 +75,133 @@ function Home() {
       <br />
       <br />
       <DoctorSection
-        img="/doctor.png"
-        name="Dr. Nishant Gemini"
-        edu="BPT, M.P.T. (Sports), MIAP, M.D(AM), IASTM, KTT"
-        data={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto 
-              voluptates a commodi? Minus obcaecati sed sint non explicabo veniam 
-              assumenda beatae optio quae omnis, necessitatibus itaque nobis vitae 
-              totam, nemo tenetur odit repellat animi provident? Dolor fugit libero 
-              deleniti nemo molestiae inventore deserunt accusantium, repellat 
-              perferendis rerum obcaecati aperiam suscipit laboriosam alias. Ipsam 
-              excepturi harum, ab tempora voluptatum quia explicabo, libero magni 
-              laboriosam quasi enim soluta odio amet dignissimos sit cum nesciunt 
-              exercitationem molestias! Dicta, a suscipit consequuntur libero 
-              nesciunt nulla ipsa debitis reprehenderit repellendus rerum hic ipsum 
-              dolores ducimus sed labore corrupti voluptatem ut eos! Officia, maxime
-              molestias?`}
         orderImg={1}
         orderData={2}
+        img={DoctorData.img}
+        edu={DoctorData.edu}
+        name={DoctorData.name}
+        data={DoctorData.data}
       />
       <br />
       <br />
       <br />
       <DoctorSection
-        img="/doctor.png"
-        name="Dr. Nishant Gemini"
-        edu="BPT, M.P.T. (Sports), MIAP, M.D(AM), IASTM, KTT"
-        data={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto 
-              voluptates a commodi? Minus obcaecati sed sint non explicabo veniam 
-              assumenda beatae optio quae omnis, necessitatibus itaque nobis vitae 
-              totam, nemo tenetur odit repellat animi provident? Dolor fugit libero 
-              deleniti nemo molestiae inventore deserunt accusantium, repellat 
-              perferendis rerum obcaecati aperiam suscipit laboriosam alias. Ipsam 
-              excepturi harum, ab tempora voluptatum quia explicabo, libero magni 
-              laboriosam quasi enim soluta odio amet dignissimos sit cum nesciunt 
-              exercitationem molestias! Dicta, a suscipit consequuntur libero 
-              nesciunt nulla ipsa debitis reprehenderit repellendus rerum hic ipsum 
-              dolores ducimus sed labore corrupti voluptatem ut eos! Officia, maxime
-              molestias?`}
         orderImg={2}
         orderData={1}
+        img={DoctorData.img}
+        edu={DoctorData.edu}
+        name={DoctorData.name}
+        data={DoctorData.data}
       />
       <br />
+      <br />
+      <br />
+      <section className={style.sec_three}>
+        <Container>
+          <Typography variant="h4" textAlign="center">
+            Our
+            <b>
+              <span style={{ marginLeft: "10px", color: "blue" }}>
+                ORTHOPADIC EXPERTS
+              </span>
+            </b>
+          </Typography>
+          <br />
+          <Typography textAlign="center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+            accusamus blanditiis iusto dolorum accusantium illum aspernatur
+            rerum expedita aperiam, porro perferendis sint temporibus,
+            voluptatum molestias dicta quas similique nulla nobis deserunt quis.
+            Similique quo modi iure, qui assumenda quos minus provident
+            aspernatur vel, perspiciatis expedita eum quasi in odio consectetur.
+          </Typography>
+        </Container>
+        <br />
+        <br />
+        <br />
+        <DoctorSection
+          orderImg={1}
+          orderData={2}
+          img={DoctorData.img}
+          edu={DoctorData.edu}
+          name={DoctorData.name}
+          data={DoctorData.data}
+        />
+        <br />
+        <br />
+        <br />
+        <DoctorSection
+          orderImg={2}
+          orderData={1}
+          img={DoctorData.img}
+          edu={DoctorData.edu}
+          name={DoctorData.name}
+          data={DoctorData.data}
+        />
+      </section>
+      <br />
+      <br />
+      <Container>
+        <Typography variant="h4" textAlign="center">
+          Our
+          <b>
+            <span style={{ marginLeft: "10px", color: "var(--theme-blue)" }}>
+              APPROACH
+            </span>
+          </b>
+        </Typography>
+        <br />
+        <Typography textAlign="center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+          officia distinctio, explicabo harum, fugiat facere minima at itaque
+          voluptatum perferendis esse ex quos reiciendis a asperiores. Sed id
+          optio aliquid, sit molestiae aspernatur deleniti iusto deserunt, amet
+          iure quibusdam in quis veritatis. Odit deserunt quisquam similique nam
+          cupiditate! Quisquam, ex.
+        </Typography>
+        <br />
+        <br />
+        <Grid container spacing={5}>
+          <ImgComponent />
+          <ImgComponent />
+          <ImgComponent />
+          <ImgComponent />
+        </Grid>
+      </Container>
+      <br />
+      <br />
+      <br />
+      <Divider />
+      <br />
+      <br />
+      <br />
+      <Container>
+        <Typography variant="h4" textAlign="center">
+          We Can
+          <b>
+            <span style={{ marginLeft: "10px", color: "var(--theme-blue)" }}>
+              Help You
+            </span>
+          </b>
+        </Typography>
+        <br />
+        <Typography textAlign="center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          debitis similique dicta fuga aliquid accusantium veritatis quibusdam,
+          ipsum inventore autem vitae cum fugit, a nesciunt. Mollitia natus
+          temporibus error quis, modi dicta ea, ad nisi aspernatur nesciunt
+          itaque tempore amet iusto qui? Numquam odio tempora nihil ad natus
+          voluptatem fugit!
+        </Typography>
+        <br />
+        <br />
+        <Grid container spacing={5}>
+          <ImgComponent />
+          <ImgComponent />
+          <ImgComponent />
+          <ImgComponent />
+        </Grid>
+      </Container>
       <br />
       <br />
     </>

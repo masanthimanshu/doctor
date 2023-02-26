@@ -4,7 +4,11 @@ export const Header = () => {
   return (
     <AppBar position="sticky" elevation={0}>
       <Toolbar>
-        <img src="/logo.png" alt="Logo" style={{ height: "4rem" }} />
+        <img
+          style={{ height: "4rem", width: "auto" }}
+          src="/logo.png"
+          alt="Logo"
+        />
         <Box sx={{ width: "100%" }}>&nbsp;</Box>
         <Box display="flex">
           <Button sx={{ p: 1, m: 1 }} variant="text" color="secondary">

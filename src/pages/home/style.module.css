@@ -12,3 +12,8 @@
   text-align: center;
   background-color: var(--theme-blue);
 }
+
+.sec_three {
+  background-color: #aceefe;
+  padding: 2rem 0;
+}

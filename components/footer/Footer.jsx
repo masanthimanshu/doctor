@@ -7,7 +7,11 @@ export const Footer = () => {
     <>
       <section className={style.sec_one}>
         <Container>
-          <img src="/logo.png" alt="Logo" style={{ height: "5rem" }} />
+          <img
+            style={{ height: "4rem", width: "auto" }}
+            src="/logo.png"
+            alt="Logo"
+          />
           <br />
           <br />
           <br />
