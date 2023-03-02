@@ -12,9 +12,10 @@ export const DoctorSection = ({
   return (
     <Container>
       <Grid container spacing={5}>
-        <Grid item md={6} order={orderImg}>
+        <Grid item md={4} order={orderImg}>
           <img src={img} alt="Doctor" />
         </Grid>
+        <Grid item md={2}></Grid>
         <Grid item md={6} order={orderData} display="flex" alignItems="center">
           <Box>
             <Typography variant="h4" color="darkblue">

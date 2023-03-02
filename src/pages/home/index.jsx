@@ -1,11 +1,24 @@
+import Link from "next/link";
 import style from "./style.module.css";
 import DoctorData from "../../../data/DoctorData.json";
 import { DoctorSection, ImgComponent } from "../../../components";
-import { Container, Typography, Grid, Button, Divider } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Button,
+  Divider,
+  Container,
+  Typography,
+} from "@mui/material";
 
 function Home() {
   return (
     <>
+      <Box sx={{ position: "fixed", right: "1rem", bottom: "1rem" }}>
+        <Link href="#">
+          <img src="/whatsapp.png" alt="Whatsapp" style={{ width: "4rem" }} />
+        </Link>
+      </Box>
       <section className={style.top_sec}>
         <Container>
           <Grid container spacing={5}>
@@ -54,7 +67,7 @@ function Home() {
       <br />
       <br />
       <br />
-      <Container>
+      <Container id="about">
         <Typography variant="h4" textAlign="center">
           Our
           <b>
@@ -77,9 +90,9 @@ function Home() {
       <DoctorSection
         orderImg={1}
         orderData={2}
-        img={DoctorData.img}
+        img="/nishant.png"
         edu={DoctorData.edu}
-        name={DoctorData.name}
+        name="Dr. Nishant Gemini"
         data={DoctorData.data}
       />
       <br />
@@ -88,16 +101,16 @@ function Home() {
       <DoctorSection
         orderImg={2}
         orderData={1}
-        img={DoctorData.img}
+        img="/pradeep.png"
         edu={DoctorData.edu}
-        name={DoctorData.name}
+        name="Dr. Pradeep Sharam"
         data={DoctorData.data}
       />
       <br />
       <br />
       <br />
       <section className={style.sec_three}>
-        <Container>
+        <Container id="services">
           <Typography variant="h4" textAlign="center">
             Our
             <b>
@@ -122,9 +135,9 @@ function Home() {
         <DoctorSection
           orderImg={1}
           orderData={2}
-          img={DoctorData.img}
+          img="/debashish.png"
           edu={DoctorData.edu}
-          name={DoctorData.name}
+          name="Dr. Debashish Chanda"
           data={DoctorData.data}
         />
         <br />
@@ -133,15 +146,15 @@ function Home() {
         <DoctorSection
           orderImg={2}
           orderData={1}
-          img={DoctorData.img}
+          img="/reeta.png"
           edu={DoctorData.edu}
-          name={DoctorData.name}
+          name="Dr. Reetadyuti Mukhopadhyay"
           data={DoctorData.data}
         />
       </section>
       <br />
       <br />
-      <Container>
+      <Container id="blog">
         <Typography variant="h4" textAlign="center">
           Our
           <b>
@@ -175,7 +188,7 @@ function Home() {
       <br />
       <br />
       <br />
-      <Container>
+      <Container id="portfolio">
         <Typography variant="h4" textAlign="center">
           We Can
           <b>

@@ -5,7 +5,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 export const Footer = () => {
   return (
     <>
-      <section className={style.sec_one}>
+      <section className={style.sec_one} id="contact">
         <Container>
           <img
             style={{ height: "4rem", width: "auto" }}
